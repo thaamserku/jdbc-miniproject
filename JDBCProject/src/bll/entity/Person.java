@@ -1,5 +1,21 @@
 package bll.entity;
 
+/**
+ * Parent class for all other entity classes.
+ * 
+ * This is the parent entity class which is extended by all other subsequent
+ * entity classes of the project. It contains six attributes common across all
+ * other entities.
+ * 
+ * This entity class contains attributes, constructors, getters and setters.
+ * 
+ * Constructors are overloaded.
+ * 
+ * @author kcpaudel
+ * @version 0.0.1
+ *
+ */
+
 public class Person {
 	private int id;
 	private String name;
@@ -8,14 +24,29 @@ public class Person {
 	private String email;
 	private String address;
 
-	// default constructor
+	// Default constructor
 	public Person() {
 
 	}
 
-	// constructor without id. This will be used to insert data into table.
-	// MySQL table has it with auto_increment, so for data insertion we are not
-	// going to use id.
+	/**
+	 * Parameterized constructor without ID parameter.
+	 * 
+	 * Database(MySQL in this case) has an ID column as primary key column, with
+	 * auto-increment feature enabled.
+	 * 
+	 * We will use this constructor to insert data into the table.
+	 * 
+	 * Since the ID is incrementally auto-inserted by database software, we don't
+	 * need to supply it while inserting data.
+	 * 
+	 * @param name    : First name and last name combined.
+	 * @param gender  : Biological sex of the entity object.
+	 * @param phone   : 10-digit phone number
+	 * @param email   : Email address.
+	 * @param address : Physical Location. State or City Name only.
+	 */
+
 	public Person(String name, String gender, String phone, String email, String address) {
 		super();
 		this.name = name;
@@ -25,8 +56,25 @@ public class Person {
 		this.address = address;
 	}
 
-	// Constructor with id.
-	// This will be used to process and format ResultSet data for display.
+	/**
+	 * Parameterized constructor with ID parameter.
+	 * 
+	 * This constructor is used to access data to carry out manipulation and
+	 * visualization tasks that is primary-key based(ID based in our case).
+	 * 
+	 * @param id      : Auto-incremented, auto-inserted primary attribute of entity
+	 *                object.
+	 * @param name    : First name and last name combined.
+	 * @param gender  : Biological sex of the entity object.
+	 * @param phone   : 10-digit phone number
+	 * @param email   : Email address.
+	 * @param address : Physical Location. State or City Name only.
+	 */
+	/*-
+	 *  1. 
+	 *  2. This constructor can be used to access data to carry out  manipulation
+	 *     and visualization tasks that is primary-key based(ID based in our case).
+	 */
 
 	public Person(int id, String name, String gender, String phone, String email, String address) {
 		super();
@@ -37,6 +85,10 @@ public class Person {
 		this.email = email;
 		this.address = address;
 	}
+
+	/*-
+	 * Relevant Getters and Setters.
+	 */
 
 	public int getId() {
 		return id;
