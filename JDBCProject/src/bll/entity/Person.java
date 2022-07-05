@@ -1,12 +1,12 @@
 package bll.entity;
 
 public class Person {
-	protected int id;
-	protected String name;
-	protected String gender;
-	protected String phone;
-	protected String email;
-	protected String address;
+	private int id;
+	private String name;
+	private String gender;
+	private String phone;
+	private String email;
+	private String address;
 
 	// default constructor
 	public Person() {
