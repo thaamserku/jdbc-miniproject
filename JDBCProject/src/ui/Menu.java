@@ -356,6 +356,4 @@ public class Menu {
 		}
 	}
 
-	// IServiceStudent student = new IServiceStudent();
-	// IServiceTeacher teacher = new IServiceTeacher();
 }
