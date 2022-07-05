@@ -4,14 +4,23 @@ import java.sql.Date;
 import java.util.Scanner;
 
 /**
+ * <p>
  * Employee entity class that extends Person entity class and also serves as
  * parent class for Teacher and Staff entity classes.
+ * </p>
  * 
+ * <p>
  * Includes two attributes common to both derived classes.
+ * <p>
  * 
+ * <p>
  * This entity class contains attributes, constructors, getters and setters.
+ * </p>
  * 
+ * <p>
  * Constructors are overloaded.
+ * </p>
+ * 
  * 
  * @author kcpaudel
  * @version 0.0.1
