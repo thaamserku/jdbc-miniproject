@@ -16,6 +16,12 @@ public class Menu {
 	ReportUI report = new ReportUI();
 	UpdateRecordUI update = new UpdateRecordUI();
 
+	// Display logInHeader
+	public void logInHeader() {
+		System.out.println("\t\t\t******* Welcome to School Management System ******");
+		System.out.println("\t\t\t\t***********************************");
+	}
+
 	// User Validation
 	public void validateUser() {
 		System.out.println("\n\t\t\tEnter your username and password to login.");
@@ -36,11 +42,6 @@ public class Menu {
 			validateUser();
 
 		}
-	}
-
-	public void logInHeader() {
-		System.out.println("\t\t\t******* Welcome to School Management System ******");
-		System.out.println("\t\t\t\t***********************************");
 	}
 
 	// Display Main Menu
